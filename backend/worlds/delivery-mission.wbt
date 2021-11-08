@@ -7,8 +7,8 @@ WorldInfo {
   }
 }
 Viewpoint {
-  orientation -0.017002453511161607 0.9984003306239363 0.05392305985953838 2.4163416151817314
-  position 419.80104494397347 3.459913161618698 -412.3336265249237
+  orientation -0.03749857173329231 0.9910232094857452 0.1283232456670885 2.530014832088716
+  position 415.8282482127135 5.883330619692316 -409.3214621272489
   follow "moose"
 }
 TexturedBackground {
@@ -156,10 +156,50 @@ Mavic2Pro {
     }
   ]
 }
+Mavic2Pro {
+  translation 408.198 0.00027032 -402.278
+  rotation 0.06813326818388707 0.7086996690593406 0.702212672088566 -2.9074453071795863
+  name "Mavic 2 PRO(1)"
+  controller "mavic2pro_controller2"
+  bodySlot [
+    Compass {
+      rotation 1 0 0 1.5708
+      name "compass(1)"
+    }
+  ]
+  cameraSlot [
+    Camera {
+      rotation 1 0 0 -0.13090030610042527
+      rotationStep 0.261812
+      recognitionColors [
+        0 0 0
+      ]
+      width 400
+      height 240
+      recognition Recognition {
+        maxRange 5
+      }
+    }
+  ]
+}
 Moose {
   translation 407.683 -0.44 -398.183
   rotation 0 1 0 -2.8797853071795863
   controller "moose_controller"
+  bodySlot [
+    Compass {
+      rotation 1 0 0 1.5708
+    }
+    GPS {
+      rotation 1 0 0 1.5708
+    }
+  ]
+}
+Moose {
+  translation 411.783 -0.44 -399.083
+  rotation 0 1 0 -2.8797853071795863
+  name "moose(1)"
+  controller "moose_controller2"
   bodySlot [
     Compass {
       rotation 1 0 0 1.5708
